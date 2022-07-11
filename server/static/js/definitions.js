@@ -1,5 +1,5 @@
 // настройка сервопривода, ось x
-const servoMin = 45, servoMax = 135;
+const servoMin = 70, servoMax = 110;
 let servoAngle = (servoMax-servoMin)/2+servoMin;
 
 // настройка скорости, ось y

@@ -6,13 +6,15 @@ html, body {
 
 #stickpad {
 	position: relative;
-	width: 50vmin;
-	height: 0;
-	padding-bottom: 50vmin;
-	top: calc(40vh + 7vmin);
-	margin: auto;
-	background-color: #9E9E9E;
-	border-radius: 10%;
+    min-width: 200px;
+    width: 50vmin;
+    height: 0;
+    padding-bottom: 50vmin;
+    top: 40vh;
+    margin: auto;
+    background-color: #9E9EA9;
+    border-radius: 10%;
+    margin-bottom: 5vmax;
 }
 
 #stick {

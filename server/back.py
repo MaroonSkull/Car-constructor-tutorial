@@ -57,15 +57,15 @@ def webapp():
 def controller():
     def setMotorSpeed(direction, speed):
         if direction:
-            GPIO.output(Ain1,GPIO.HIGH)     # Пара high/low отвечает за направление вращения
-            GPIO.output(Ain2,GPIO.LOW)
-            GPIO.output(Bin1,GPIO.HIGH)
-            GPIO.output(Bin2,GPIO.LOW)
-        else:
             GPIO.output(Ain1,GPIO.LOW)      # реверсим направление
             GPIO.output(Ain2,GPIO.HIGH)
             GPIO.output(Bin1,GPIO.LOW)
             GPIO.output(Bin2,GPIO.HIGH)
+        else:
+            GPIO.output(Ain1,GPIO.HIGH)     # Пара high/low отвечает за направление вращения
+            GPIO.output(Ain2,GPIO.LOW)
+            GPIO.output(Bin1,GPIO.HIGH)
+            GPIO.output(Bin2,GPIO.LOW)
 
         A.ChangeDutyCycle(speed)
         B.ChangeDutyCycle(speed)
